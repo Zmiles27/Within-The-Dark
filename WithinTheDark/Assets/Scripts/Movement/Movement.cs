@@ -35,7 +35,14 @@ public class Movement : MonoBehaviour
         {
             this.transform.Translate(0, 0, speed * Time.deltaTime);
         }
-
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 10;        
+        }
+        else
+        {
+            speed = 5;
+        }
 
         mouseX += Input.GetAxis("Mouse X") * sensitivity;
         transform.eulerAngles = new Vector3(0, mouseX, 0);

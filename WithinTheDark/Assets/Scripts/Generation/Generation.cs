@@ -32,11 +32,11 @@ public class Generation : MonoBehaviour
         var random = new System.Random();        
 
         int index = random.Next(GrassTiles.Count);
-        for (int x = 0; x < spawnLength; x = x + 10)
+        for (int x = 0; x < spawnLength * 10; x = x + 10)
         {
-            for (int z = 0; z < spawnLength; z = z + 10)
+            for (int z = 0; z < spawnLength * 10; z = z + 10)
             {
-                Instantiate(GrassTiles[UnityEngine.Random.Range(0, 9)], new Vector3(x - 45 , 0, z -145), Quaternion.identity, parent);
+                Instantiate(GrassTiles[UnityEngine.Random.Range(0, 9)], new Vector3(x , 0, z), Quaternion.identity, parent);
             }
         }
     }
