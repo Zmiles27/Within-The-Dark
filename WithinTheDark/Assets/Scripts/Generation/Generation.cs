@@ -36,7 +36,7 @@ public class Generation : MonoBehaviour
         {
             for (int z = 0; z < spawnLength * 10; z = z + 10)
             {
-                Instantiate(GrassTiles[UnityEngine.Random.Range(0, 9)], new Vector3(x , 0, z), Quaternion.identity, parent);
+                Instantiate(GrassTiles[UnityEngine.Random.Range(0, 8)], new Vector3(x , 0, z), Quaternion.identity, parent);
             }
         }
     }

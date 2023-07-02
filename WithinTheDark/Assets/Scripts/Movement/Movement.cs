@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
-        transform.position = new Vector3(0, 5, 0);
+        transform.position = new Vector3(83, 14, 0);
     }
 
     // Update is called once per frame
